@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="32dp"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt" />
+
+    <EditText
+        android:id="@+id/berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/kategori"
+        android:layout_toLeftOf="@+id/post"
+        android:ems="10"
+        android:hint="Write news"
+        android:inputType="textMultiLine"
+        android:maxHeight="300dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Post" />
+
+</RelativeLayout>

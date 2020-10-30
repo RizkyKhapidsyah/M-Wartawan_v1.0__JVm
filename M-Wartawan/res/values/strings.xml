@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M-Wartawan</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="country_prompt">Choose a Category</string>
+ 
+    <string-array name="country_arrays">
+        <item>Politic</item>
+        <item>Entertainment</item>
+        <item>Sport</item>
+    </string-array>
+
+</resources>

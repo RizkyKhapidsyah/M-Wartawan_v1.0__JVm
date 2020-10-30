@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wilis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/itcm"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wilis.awal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <activity android:name="CustomHttpClient"></activity>
+                        <activity android:name="user" android:label="Profile">
+        </activity><activity android:name="Login" android:label="Login">
+        </activity>
+                        <activity android:name="post" android:label="Posting News">
+        </activity><activity android:name="CustomOnItemSelectedListener" android:label="Category">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
